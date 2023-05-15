@@ -1,17 +1,16 @@
 package FileHandling;
 
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 
 public class file
 {
-    public static void main(String[] args)
+    String st;
+    public  void WriteFile() throws IOException
     {
         try
         {
             FileWriter fw = new FileWriter("demo.txt");
-            fw.write("Mysuru");
+            fw.write("Mysuru!!!!!");
             fw.close();
             System.out.println("\nFile write done");
         }
@@ -19,5 +18,18 @@ public class file
         {
             System.out.println("There are some IOException");
         }
+    }
+    public  void ReadFile() throws IOException
+    {
+        File file = new File("C:\\Users\\HP\\IdeaProjects\\JavaIntern\\demo.txt");
+        BufferedReader br = new BufferedReader(new FileReader(file));
+        while ((st = br.readLine()) != null)
+            System.out.println(st);
+    }
+    public static void main(String[] args) throws IOException
+    {
+        file f = new file();
+        f.WriteFile();
+        f.ReadFile();
     }
 }
