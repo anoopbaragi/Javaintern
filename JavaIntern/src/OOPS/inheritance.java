@@ -14,7 +14,6 @@ class mobile
           System.out.println("Storage :64GB");
       }
   }
-
 public class inheritance
 {
     public static void main(String[] args)
