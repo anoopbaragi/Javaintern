@@ -21,7 +21,7 @@ public class file
     }
     public  void ReadFile() throws IOException
     {
-        File file = new File("C:\\Users\\HP\\IdeaProjects\\JavaIntern\\demo.txt");
+        File file = new File("C:\\Users\\HP\\IdeaProjects\\JavaIntern\\Read.txt");
         BufferedReader br = new BufferedReader(new FileReader(file));
         while ((st = br.readLine()) != null)
             System.out.println(st);
