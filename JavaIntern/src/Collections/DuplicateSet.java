@@ -3,7 +3,7 @@ package Collections;
 import java.util.HashMap;
 import java.util.Map;
 
-public class DuplicateinSet
+public class DuplicateSet
 {
     public static void main(String[] args)
     {
